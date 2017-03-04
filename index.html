@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app="myApp">
+<html ng-app="myQuiz">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +10,12 @@
 
 		<div id="myQuiz" ng-controller="QuizController">
 		<h1>Test Your Knowledge: <span>Mets Trivia</span></h1>
-		<div class="progress">
-			<div class="answered correct"></div>
-			<div class="on"></div>
-			<div></div>
+		<div class="progress"> 
+			<div ng-repeat="myQuestion in myQuestions"></div>
+
 		</div>
 		
-		<div class="intro">
+		<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 			<h2>Welcome</h2>
 			<p>click begin to test your knowledge of the Mets</p>
 			<p class="btn">Begin</p>
