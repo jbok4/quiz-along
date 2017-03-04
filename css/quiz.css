@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
+
+body { background-color: #fff; padding: 20px; }
+
+#myQuiz {
+   font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+   width: 650px;
+   height: 650px;
+   position: relative;
+   overflow: hidden;
+   color: white;
+   background: #000 url(../images/background.jpg) no-repeat 0px 0px;
+}
+
+#myQuiz h1 {
+  font-weight: 100;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+}
+
+#myQuiz h1 span {
+  display: block;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.2em;
+  line-height: 40px;
+}
+   
+#myQuiz h2 {
+  font-size: 3em;
+  margin: 0px;
+  font-weight: 100;
+}
+
+#myQuiz h3 {
+  font-size: 2.4em;
+  margin: 0px;
+  font-weight: 100;
+}
+
+#myQuiz p {
+margin: 0 0 14px 0;
+}
+
+#myQuiz .btn {
+display: inline-block;
+cursor: pointer;
+background-color: #c04b01;
+color: white;
+text-decoration: none;
+padding: 5px 15px;
+border-radius: 6px;
+}
+
+
+#myQuiz .intro {
+  position: absolute;
+  top: 225px;
+  left: 660px;
+  width: 550px;
+
+}
+
+.intro p {
+    margin-bottom: 40px;
+}
+
+
