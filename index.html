@@ -11,22 +11,22 @@
 		<div id="myQuiz" ng-controller="QuizController">
 		<h1>Test Your Knowledge: <span>Mets Trivia</span></h1>
 		<div class="progress"> 
-			<div ng-repeat="myQuestion in myQuestions"></div>
+			<div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
 
 		</div>
 		
 		<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 			<h2>Welcome</h2>
 			<p>click begin to test your knowledge of the Mets</p>
-			<p class="btn">Begin</p>
+			<p class="btn" ng-click="activeQuestion = 0">Begin</p>
 		</div>
 		
-		<div class="question">
-			<p class="text">This is a question</p>
-			<p class="answer">Answer 1</p>
-			<p class="answer">Answer 2</p>
-			<p class="answer">Answer 3</p>
-			<p class="answer">Answer 4</p>
+		<div class="question answered
+			{{ $index === activeQuestion ? 'active' : 'inactive' }}
+		" ng-repeat="myQuestion in myQuestions">
+			<p class="text">{{ myQuestion.question }}</p>
+			<p class="answer" ng-repeat="answer in myQuestions[$index].answers">{{ answer.text }}</p>
+
 			<div class="feedback">
 				<p>You are <strong>correct!</strong></p>
 				<p>That is not correct</p>
