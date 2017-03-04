@@ -21,11 +21,22 @@
 			<p class="btn" ng-click="activeQuestion = 0">Begin</p>
 		</div>
 		
-		<div class="question answered
+		<div class="question 
 			{{ $index === activeQuestion ? 'active' : 'inactive' }}
-		" ng-repeat="myQuestion in myQuestions">
-			<p class="text">{{ myQuestion.question }}</p>
-			<p class="answer" ng-repeat="answer in myQuestions[$index].answers">{{ answer.text }}</p>
+			{{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered' }}
+			" ng-repeat="myQuestion in myQuestions">
+			<p class="text">{{ myQuestion.question }} {{ myQuestion.selectedAnswer }}</p>
+			
+			<p class="answer" 
+				ng-class="{ 
+										image:Answer.image,
+										selected:isSelected($parent.$index,$index), 
+										correct:isCorrect($parent.$index,$index) }"
+				ng-style="{ 'background-image' : 'url({{ Answer.image }})' }"						
+				ng-click="selectAnswer($parent.$index,$index)"
+				ng-repeat="Answer in myQuestions[$index].answers">
+				{{ Answer.text }}
+			</p>
 
 			<div class="feedback">
 				<p>You are <strong>correct!</strong></p>
