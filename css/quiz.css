@@ -49,7 +49,7 @@ margin: 0 0 14px 0;
 #myQuiz .btn {
 display: inline-block;
 cursor: pointer;
-background-color: #c04b01;
+background-color: #fe792a;
 color: white;
 text-decoration: none;
 padding: 5px 15px;
@@ -95,13 +95,14 @@ border-radius: 6px;
   left: -15px;
   width: 65px;
   height: 40px;
-  background: url(../images/ring.svg) no-repeat 0 0;
+  background: url(https://upload.wikimedia.org/wikipedia/en/7/7b/New_York_Mets.svg) no-repeat 15px 5px;
+  background-size: 30px 30px;
   transition: opacity 1s, top 1s;
   opacity: 0;
 }
 
 #myQuiz .progress div.on, #myQuiz .progress div.answered {
-  background-color: #efbe5e;
+  background-color: #fe792a;
 }
 
 #myQuiz .progress div.correct::after {
