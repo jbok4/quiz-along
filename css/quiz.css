@@ -243,5 +243,12 @@ border-radius: 6px;
 }
 
 
+#myQuiz {
+  height: 1000px;
+}
+#myQuiz .results {
+  top: 650px !important;
+  left: 40px !important;
 
+}
 
