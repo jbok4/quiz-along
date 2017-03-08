@@ -29,19 +29,21 @@
 			
 			<p class="answer" 
 				ng-class="{ 
+					image:Answer.image,
 					selected:isSelected($parent.$index, $index), 
 					correct:isCorrect($parent.$index, $index) 
 				}"
+				ng-style="{ 'background-image':'url({{ Answer.image }})' }"
 				ng-click="selectAnswer($parent.$index, $index)"
 				ng-repeat="Answer in myQuestions[$index].answers" >
 				{{ Answer.text }}
 			</p>
 
 			<div class="feedback">
-				<p>You are <strong>correct!</strong></p>
-				<p>That is not correct</p>
-				<p>Additional Feedback</p>
-				<div class="btn">Continue</div>
+				<p ng-show="myQuestion.correctness === 'correct' ">You are <strong>correct!</strong></p>
+				<p ng-show="myQuestion.correctness === 'incorrect' ">That is not correct</p>
+				<p>{{ myQuestion.feedback }}</p>
+				<div class="btn" ng-click="selectContinue()">Continue</div>
 			</div>
 		</div>
 
