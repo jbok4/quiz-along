@@ -15,7 +15,6 @@
       });
 
       $scope.selectAnswer = function(qIndex, aIndex){
-        // console.log(qIndex + ' and ' + aIndex);
 
           var questionState = $scope.myQuestions[qIndex].questionState;
 
@@ -46,6 +45,14 @@
 
       $scope.selectContinue = function() {
         return $scope.activeQuestion += 1;
+      }
+
+      $scope.createShareLinks = function(percentage) {
+        var url = 'http://127.0.0.1:8080/';
+        var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+ percentage +'% on this quiz about the Mets. Try to beat my score at '+ url +'">Email a Friend</a>';
+        var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+ percentage +'% on this quiz about the Mets. Try to beat my score at&amp;hashtags=MetsQuiz&amp;url='+url+'">Tweet Your Score</a>';
+        var newMarkup = emailLink + twitterLink;
+        return $sce.trustAsHtml(newMarkup);
       }
 
 
