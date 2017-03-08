@@ -20,34 +20,48 @@
     "correct"  : 3
   },
   {
-    "question" : "One year on Saturn is equivalent to how many years on Earth?",
+    "question" : "Which 1969 Miracle Met earned another World Series ring as a coach on the 1986 Mets?",
     "answers"  : [
-      {"id"  : 0, "text" : "12"},
-      {"id"  : 1, "text" : "6"},
-      {"id"  : 2, "text" : "29"},
-      {"id"  : 3, "text" : "2"}
+      {"id"  : 0, "text" : "Don Cardwell"},
+      {"id"  : 1, "text" : "Ed Kranepool"},
+      {"id"  : 2, "text" : "Ron Swoboda"},
+      {"id"  : 3, "text" : "Bud Harrelson"}
     ],
-    "correct"  : 2
+    "correct"  : 3
   },
   {
-    "question" : "What is the name of Saturn's largest moon?",
+    "question" : "Who won the World Series MVP for the Mets in 1986?",
     "answers"  : [
-      {"id"  : 0, "text" : "Hercules"},
-      {"id"  : 1, "text" : "Europa"},
-      {"id"  : 2, "text" : "Goliath"},
-      {"id"  : 3, "text" : "Zeus"},
-      {"id"  : 4, "text" : "Titan"},
-      {"id"  : 5, "text" : "Triton"}
+      {"id"  : 0, "text" : "Ray Knight"},
+      {"id"  : 1, "text" : "Gary Carter"},
+      {"id"  : 2, "text" : "Lenny Dykstra"},
+      {"id"  : 3, "text" : "Keith Hernandez"},
+      {"id"  : 4, "text" : "Doc Gooden"},
+      {"id"  : 5, "text" : "Howard Johnson"}
     ],
-    "correct"  : 4,
-    "feedback" : "Though the names seem similar, Triton orbits the planet Neptune."
+    "correct"  : 0,
+    "feedback" : "Ray Knight won the World Series MVP Award while Keith Hernandez won the NL First Baseman Gold Glove and Gary Carter, NL Catcher Silver Slugger Award"
   },
   {
-    "question" : "Saturn is visible from Earth without a telescope",
+    "question" : "Before Jacob deGrom won it in 2014, who was the last Met pitcher to win the NL Rookie of the Year?",
     "answers"  : [
-      {"id"  : 0, "text" : "True"},
-      {"id"  : 1, "text" : "False"}
+      {"id"  : 0, "text" : "Tom Seaver"},
+      {"id"  : 1, "text" : "Jon Matlack"},
+      {"id"  : 2, "text" : "Darryl Strawberry"},
+      {"id"  : 3, "text" : "Dwight Gooden"}
     ],
-    "correct"  : 0
+    "correct"  : 3,
+    "feedback" : "While all these pitchers won NL Rookie of the year, Gooden was the most recent, in 1984."
+  },
+  {
+    "question" : "How many numbers (excluding Jackie Robinson's) have the Mets retired?",
+    "answers"  : [
+      {"id"  : 0, "text" : "1"},
+      {"id"  : 1, "text" : "2"},
+      {"id"  : 2, "text" : "3"},
+      {"id"  : 3, "text" : "4"}
+    ],
+    "correct"  : 3,
+    "feedback" : "Tom Seaver, Gil Hodges, Casey Stengel and Mike Piazza"
   }
 ]
