@@ -24,10 +24,11 @@ body { background-color: #fff; padding: 20px; }
 
 #myQuiz h1 span {
   display: block;
-  font-weight: 400;
+  color: #fe792a;
+  font-weight: 600;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 2.2em;
-  line-height: 40px;
+  font-size: 2.9em;
+  line-height: 60px;
 }
    
 #myQuiz h2 {
@@ -181,7 +182,7 @@ border-radius: 6px;
 }
 
 #myQuiz .feedback {
-  color: #efbe5e;
+  color: #fe792a;
   margin-top: 50px;
   transition: opacity 1.5s, margin-top 1.5s;
   visibility: hidden;
